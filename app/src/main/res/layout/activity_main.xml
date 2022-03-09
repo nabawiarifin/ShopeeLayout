@@ -6,103 +6,153 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!-- Top Bar -->
     <LinearLayout
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="160dp"
+        android:background="@drawable/BannerShopee"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints">
 
         <SearchView
-            android:layout_width="320dp"
-            android:layout_height="36dp"
-            android:layout_marginLeft="10dp"
+            android:id="@+id/searchView"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
             android:layout_marginTop="10dp"
-            android:textColorHint="@color/black" />
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/black">
+
+        </SearchView>
 
         <ImageButton
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" />
 
         <ImageButton
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_marginTop="10dp"/>
-
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" />
     </LinearLayout>
 
-    <GridLayout
+<!-- Choices -->
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_bar"
-        android:rowCount="2"
-        android:columnCount="4"
-        >
+        android:layout_marginTop="50dp">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:text="Button" />
+        <TableRow>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="27dp"
+                android:src="@drawable/pedulilindungi1"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/cellphone"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/shopeesupermarket"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/shopeemall"
+                />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:text="Button" />
+        <TableRow>
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="50dp"
+                />
 
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:text="Button" />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="50dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="50dp"
+                />
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="50dp"
+                />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="2"
-            android:text="Button" />
+        <TableRow>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="27dp"
+                android:src="@drawable/shopeevoucher"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/shopeegames"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/shopeecod"
+                />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="50dp"
+                android:src="@drawable/shopeefood"
+                />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="2"
-            android:text="Button" />
+        <TableRow>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="27dp"
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="50dp"
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="50dp"
+            />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="50dp"
+            />
+        </TableRow>
 
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="0"
-            android:layout_column="3"
-            android:text="Button" />
+    </TableLayout>
 
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_row="1"
-            android:layout_column="4"
-            android:text="Button" />
 
-        <ImageButton
-            android:id="@+id/button"
-            android:layout_width="95dp"
-            android:layout_height="46dp"
-            android:layout_row="0"
-            android:layout_column="0"
-            android:scaleType="center" />
-    </GridLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
