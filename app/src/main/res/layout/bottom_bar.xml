@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <GridLayout
-        android:layout_width="262dp"
-        android:layout_height="168dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
         android:columnCount="5"
         android:rowCount="1"
         tools:ignore="MissingConstraints">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"></ImageButton>
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/rekomendasi"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"></ImageButton>
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/feed"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"></ImageButton>
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/shopeelive"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"></ImageButton>
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/notifikasi"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"></ImageButton>
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/saya"/>
 
     </GridLayout>
 
