@@ -6,44 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!-- Top Bar -->
-    <LinearLayout
-        android:id="@+id/search_bar"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:background="@drawable/BannerShopee"
-        android:orientation="horizontal"
-        tools:ignore="MissingConstraints">
-
-        <SearchView
-            android:id="@+id/searchView"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:backgroundTint="@color/black">
-
-        </SearchView>
-
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp" />
-
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="10dp" />
-    </LinearLayout>
-
-<!-- Choices -->
+<!-- Categories -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="139dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
 
         <TableRow>
             <ImageView
@@ -91,7 +61,7 @@
                 android:layout_marginLeft="127dp"
                 android:layout_marginRight="50dp"
                 android:gravity="center"
-                android:text="Pulsa, Tagihan & Hiburan"
+                android:text="Pulsa, Tagihan &amp; Hiburan"
                 android:textSize="7dp"
                 android:textColor="@color/black"/>
 
@@ -108,11 +78,11 @@
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="327dp"
+                android:layout_marginLeft="326dp"
                 android:gravity="center"
                 android:text="ShopeeMall"
-                android:textSize="7dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="7dp" />
         </RelativeLayout>
 
         <TableRow
@@ -180,20 +150,14 @@
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="327dp"
+                android:layout_marginLeft="326dp"
                 android:gravity="center"
                 android:text="ShopeeFood"
-                android:textSize="7dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="7dp" />
         </RelativeLayout>
     </TableLayout>
 
-    <include
-        layout="@layout/voucher_shopee"
-        android:layout_width="382dp"
-        android:layout_height="92dp"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="361dp"></include>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
