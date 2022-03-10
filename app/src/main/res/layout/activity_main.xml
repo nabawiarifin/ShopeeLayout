@@ -195,5 +195,10 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="361dp"></include>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
