@@ -39,7 +39,7 @@
 <!-- Choices -->
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="139dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/search_bar"
@@ -73,86 +73,127 @@
                 />
         </TableRow>
 
-        <TableRow>
-            <EditText
+        <RelativeLayout android:layout_height="19dp">
+
+            <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="27dp"
                 android:layout_marginRight="50dp"
-                />
+                android:gravity="center"
+                android:text="PeduliLindungi"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
 
-            <EditText
+            <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
+                android:layout_marginLeft="127dp"
                 android:layout_marginRight="50dp"
-                />
-            <EditText
-                android:layout_width="50dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="50dp"
-                />
-            <EditText
-                android:layout_width="50dp"
-                android:layout_height="20dp"
-                android:layout_marginRight="50dp"
-                />
-        </TableRow>
+                android:gravity="center"
+                android:text="Pulsa, Tagihan & Hiburan"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
 
-        <TableRow>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="227dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Shopee Supermarket"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="327dp"
+                android:gravity="center"
+                android:text="ShopeeMall"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginRight="50dp"
                 android:layout_marginLeft="27dp"
-                android:src="@drawable/shopeevoucher"
-                />
+                android:layout_marginRight="50dp"
+                android:src="@drawable/shopeevoucher" />
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="50dp"
-                android:src="@drawable/shopeegames"
-                />
+                android:src="@drawable/shopeegames" />
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="50dp"
-                android:src="@drawable/shopeecod"
-                />
+                android:src="@drawable/shopeecod" />
+
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="50dp"
-                android:src="@drawable/shopeefood"
-                />
+                android:src="@drawable/shopeefood" />
         </TableRow>
 
-        <TableRow>
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="27dp"
-            />
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="50dp"
-            />
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="50dp"
-            />
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="20dp"
-            android:layout_marginRight="50dp"
-            />
-        </TableRow>
+        <RelativeLayout android:layout_height="19dp">
 
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Gratis Ongkir & Voucher"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="127dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="ShopeeGames"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="227dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:text="Bayar di Tempat"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="327dp"
+                android:gravity="center"
+                android:text="ShopeeFood"
+                android:textSize="7dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
     </TableLayout>
 
-
+    <include
+        layout="@layout/voucher_shopee"
+        android:layout_width="265dp"
+        android:layout_height="82dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="361dp"></include>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
