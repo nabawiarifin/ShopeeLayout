@@ -25,5 +25,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.232"/>
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/categories_shopee"
+        android:layout_width="382dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        tools:layout_editor_absoluteX="14dp" />
+
+    <include
+        layout="@layout/voucher_shopee"
+        android:layout_width="382dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        tools:layout_editor_absoluteX="16dp"></include>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
