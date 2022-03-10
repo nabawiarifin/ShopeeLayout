@@ -349,7 +349,7 @@
         android:layout_height="15dp"
         android:layout_marginStart="294dp"
         android:layout_marginTop="202.5dp"
-        android:background="@drawable/fire"/>
+        android:background="@drawable/fire" />
 
     <TextView
         android:layout_width="50dp"
