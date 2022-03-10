@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rrLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -8,6 +10,7 @@
         android:layout_width="100dp"
         android:layout_height="20dp"
         android:layout_marginTop="3dp"
+        android:layout_marginStart="1dp"
         android:background="@drawable/flash_sale_font" />
 
     <TextView
@@ -82,5 +85,282 @@
         android:textColor="@color/white"
         android:textSize="12sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/etc"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:text="@string/lihat_lainnya"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="315dp"
+        android:textSize="11sp"/>
+
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="1dp"
+        android:background="@drawable/ic_right"
+        android:layout_toEndOf="@id/etc" />
+
+    <ImageButton
+        android:id="@+id/watch"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/watch_xiaomi" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/gratis_ongkir" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/_62_500"
+        android:textColor="@color/red"
+        android:layout_below="@id/watch"
+        android:textStyle="bold"
+        android:layout_marginStart="47dp"/>
+
+    <TextView
+        android:id="@+id/rp"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/rp"
+        android:textColor="@color/red"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/bottle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/watch"
+        android:background="@drawable/bottle" />
+
+    <ImageView
+        android:id="@+id/mall"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/ic_bubble"/>
+
+    <TextView
+        android:id="@+id/mallText"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="39dp"
+        android:fontFamily="casual"
+        android:text="@string/mall"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/discount"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_discount" />
+
+    <TextView
+        android:id="@+id/textDiscount"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/_85"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/off"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:text="@string/off"
+        android:textColor="@color/white"
+        android:layout_below="@id/textDiscount"
+        android:textStyle="bold"
+        android:layout_marginStart="117dp"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/gratis_ongkir" />
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/_48_000"
+        android:textColor="@color/red"
+        android:layout_below="@id/watch"
+        android:textStyle="bold"
+        android:layout_marginStart="197dp"/>
+
+    <TextView
+        android:id="@+id/rp2"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/rp"
+        android:textColor="@color/red"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/closet"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@id/watch"
+        android:background="@drawable/closet"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="270dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/gratis_ongkir" />
+
+    <TextView
+        android:id="@+id/price3"
+        android:layout_width="70dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/_1_500_000"
+        android:textColor="@color/red"
+        android:layout_below="@id/watch"
+        android:textStyle="bold"
+        android:layout_marginStart="310dp"/>
+
+    <TextView
+        android:id="@+id/rp3"
+        android:layout_width="48dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/rp"
+        android:textColor="@color/red"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/discount2"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_discount" />
+
+    <TextView
+        android:id="@+id/textDiscount2"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/_21"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/off2"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:text="@string/off"
+        android:textColor="@color/white"
+        android:layout_below="@id/textDiscount"
+        android:textStyle="bold"
+        android:layout_marginStart="247dp"/>
+
+    <ImageView
+        android:id="@+id/discount3"
+        android:layout_width="78dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_discount" />
+
+
+    <TextView
+        android:id="@+id/off3"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:text="@string/off"
+        android:textColor="@color/white"
+        android:layout_below="@id/textDiscount"
+        android:textStyle="bold"
+        android:layout_marginStart="395dp"/>
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10sp"
+        android:progress="25"
+        android:progressTint="@color/red"
+        android:scaleY="3" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="10sp"
+        android:progress="35"
+        android:progressTint="@color/red"
+        android:scaleY="3" />
+
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="10sp"
+        android:progress="90"
+        android:progressTint="@color/red"
+        android:scaleY="3" />
+
+    <Button
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="294dp"
+        android:layout_marginTop="202.5dp"
+        android:background="@drawable/fire"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="205.5dp"
+        android:textSize="9sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginStart="312dp"
+        android:text="@string/_224_terjual"/>
+
+
 
 </RelativeLayout>

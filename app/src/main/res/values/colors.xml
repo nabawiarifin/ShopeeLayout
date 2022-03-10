@@ -18,4 +18,7 @@
     <color name="gray2">#A1A1A1</color>
     <color name="yellow_light">#CC9E02</color>
     <color name="gray_black">#3C3C3C</color>
+    <color name="yellow2">#F6D437</color>
+    <color name="red3">#AD0101</color>
+    <color name="gradation">#A4B10000</color>
 </resources>
