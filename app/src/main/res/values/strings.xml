@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">ShopeeLayout</string>
+    <string name="pulsa_tagihan_hiburan"><![CDATA[Pulsa, Tagihan & Hiburan]]></string>
+    <string name="gratis_ongkir_voucher"><![CDATA[Gratis Ongkir & Voucher]]></string>
+    <string name="celana_olahraga_pria_pendek">Celana Olahraga Pria Pendek</string>
+    <string name="_23">23</string>
+    <string name="_61">61</string>
+    <string name="rp16_000">Rp16.000</string>
+    <string name="isi_saldo_shopeepay">Isi Saldo Shopeepay</string>
+    <string name="_5_koin">5 Koin</string>
+    <string name="klaim_koin_di_sini">Klaim koin di sini</string>
+    <string name="_00">00</string>
+    <string name="titik_dua">:</string>
+    <string name="_12">12</string>
+    <string name="_0">0</string>
 </resources>

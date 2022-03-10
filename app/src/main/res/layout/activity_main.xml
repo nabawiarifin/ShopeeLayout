@@ -11,19 +11,18 @@
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:background="@drawable/BannerShopee"
+        android:background="@drawable/banner_shopee"
         android:orientation="horizontal"
         tools:ignore="MissingConstraints">
 
-        <SearchView
+        <EditText
             android:id="@+id/searchView"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
             android:backgroundTint="@color/black">
-
-        </SearchView>
+        </EditText>
 
         <ImageButton
             android:layout_width="40dp"
@@ -91,7 +90,7 @@
                 android:layout_marginLeft="127dp"
                 android:layout_marginRight="50dp"
                 android:gravity="center"
-                android:text="Pulsa, Tagihan & Hiburan"
+                android:text="@string/pulsa_tagihan_hiburan"
                 android:textSize="7dp"
                 android:textColor="@color/black"/>
 
@@ -153,7 +152,7 @@
                 android:layout_marginLeft="27dp"
                 android:layout_marginRight="50dp"
                 android:gravity="center"
-                android:text="Gratis Ongkir & Voucher"
+                android:text="@string/gratis_ongkir_voucher"
                 android:textSize="7dp"
                 android:textColor="@color/black"/>
 
@@ -194,11 +193,6 @@
         android:layout_height="92dp"
         tools:layout_editor_absoluteX="13dp"
         tools:layout_editor_absoluteY="361dp"></include>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TEST"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

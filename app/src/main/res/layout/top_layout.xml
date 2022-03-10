@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/banner_shopee">
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="300dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search_background"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableEnd="@drawable/camera"
+        android:hint="@string/celana_olahraga_pria_pendek"
+        android:textColorHint="@color/pink"
+        android:textSize="14sp"/>
+
+    <ImageButton
+        android:id="@+id/cartBtn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@id/searchBox"
+        android:background="@drawable/ic_cart" />
+
+    <ImageButton
+        android:id="@+id/chatBtn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_toEndOf="@id/cartBtn"
+        android:background="@drawable/ic_chat" />
+
+    <TextView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@id/cartBtn"
+        android:layout_marginStart="340dp"
+        android:background="@drawable/circle_notification"
+        android:text="@string/_23"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignTop="@id/chatBtn"
+        android:layout_marginStart="380dp"
+        android:background="@drawable/circle_notification"
+        android:text="@string/_61"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/circle1"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="120dp"/>
+
+    <View
+        android:id="@+id/circle2"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle1"/>
+
+    <View
+        android:id="@+id/circle3"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle2"/>
+
+    <View
+        android:id="@+id/circle4"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle3"/>
+
+    <View
+        android:id="@+id/circle5"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle4"/>
+
+    <View
+        android:id="@+id/circle6"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle5"/>
+
+    <View
+        android:id="@+id/circle7"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle6"/>
+
+    <View
+        android:id="@+id/circle8"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:backgroundTint="@color/red2"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle7"/>
+
+    <View
+        android:id="@+id/circle9"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle8"/>
+
+    <View
+        android:id="@+id/circle10"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle9"/>
+
+    <View
+        android:id="@+id/circle11"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle10"/>
+
+    <View
+        android:id="@+id/circle12"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:background="@drawable/circle_white"
+        android:layout_marginTop="140dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/circle11"/>
+
+
+</RelativeLayout>

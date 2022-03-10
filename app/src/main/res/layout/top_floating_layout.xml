@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/card_layout">
+
+    <View
+        android:id="@+id/scannerIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_scanner"/>
+
+    <View
+        android:id="@+id/range"
+        android:layout_width="2dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray"
+        android:layout_toEndOf="@id/scannerIcon" />
+
+    <ImageView
+        android:id="@+id/logoPay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_shopeepay" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/range"
+        android:text="@string/rp16_000"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/money"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/isi_saldo_shopeepay"
+        android:textColor="@color/gray2"
+        android:textSize="11sp" />
+
+    <View
+        android:id="@+id/range2"
+        android:layout_width="2dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/money"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/logoCoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_coin" />
+
+    <TextView
+        android:id="@+id/coin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/range2"
+        android:text="@string/_5_koin"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin"
+        android:layout_marginStart="249dp"
+        android:layout_marginTop="1dp"
+        android:text="@string/klaim_koin_di_sini"
+        android:textColor="@color/gray2"
+        android:textSize="11sp" />
+
+</RelativeLayout>
