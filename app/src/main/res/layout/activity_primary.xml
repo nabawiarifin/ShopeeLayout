@@ -1,72 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/include5"
-        layout="@layout/top_layout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <include
-        android:id="@+id/include2"
-        layout="@layout/top_floating_layout"
-        android:layout_width="370dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="156dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include5" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <include
+                android:id="@+id/include5"
+                layout="@layout/top_layout"/>
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/categories_shopee"
-        android:layout_width="382dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include2" />
+            <include
+                android:id="@+id/include2"
+                layout="@layout/top_floating_layout"
+                android:layout_width="370dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="-13dp" />
 
-    <include
-        android:id="@+id/include4"
-        layout="@layout/voucher_shopee"
-        android:layout_width="382dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include" />
+            <include
+                android:id="@+id/include"
+                layout="@layout/categories_shopee"
+                android:layout_width="382dp"
+                android:layout_height="140dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginStart="9dp"/>
 
-    <include
-        android:id="@+id/include3"
-        layout="@layout/flash_sale_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include4" />
+            <include
+                android:id="@+id/include4"
+                layout="@layout/voucher_shopee"
+                android:layout_width="382dp"
+                android:layout_height="92dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="15dp"/>
 
-    <include
-        layout="@layout/bottom_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include3"
-        app:layout_constraintVertical_bias="1.0" />
+            <include
+                android:id="@+id/include3"
+                layout="@layout/flash_sale_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <include
+                layout="@layout/bottom_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
